@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
     <p> Todo list</p> 
-    <input placeholder="Todo name" class="js-input">
-    <button onclick="addTodo();"> Add </button>
-    <div class="js-tList"></div>
+    <div class="grid-input">
+    <input placeholder="Todo name" class="js-input css-input">
+    <input type="date" class="js-date css-date">
+    <button onclick="addTodo();" class="css-add"> Add </button>
+    </div>
+    <div class="js-tList grid"></div>
     <script src="todo.js">
     </script>
 </body>
