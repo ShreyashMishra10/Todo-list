@@ -1,4 +1,4 @@
-# 📝 Vanilla JS Todo List
+# 📝 JS Todo List
 
 A sleek, functional Todo application built with pure **HTML5, CSS3, and Vanilla JavaScript**. This project focuses on DOM manipulation, arrays, lists and loops.
 
