@@ -12,14 +12,24 @@ function render() {
     const tHtml = `
     <div>${name}</div>
     <div>${dueDate }</div>
-    <button onclick="
-    todoList.splice(${i}, 1);
-    render();
-    " class="css-delete">Delete</button>`;
+    <button " class="css-delete event-delete">Delete</button>`;
     html += tHtml;
   }
   document.querySelector(".js-tList").innerHTML = html;
+  document.querySelectorAll(".event-delete")
+  .forEach((deleteButton, index) => {
+    deleteButton.addEventListener("click", () => {
+      todoList.splice(index, 1);
+      render();
+    });
+  });
 }
+
+document.querySelector(".event-add").addEventListener("click", ()=>{
+  addTodo();
+});
+
+
 function addTodo() {
   const inputElement = document.querySelector(".js-input");
   const name = inputElement.value;
